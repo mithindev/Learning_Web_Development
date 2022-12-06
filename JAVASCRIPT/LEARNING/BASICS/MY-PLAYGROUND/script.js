@@ -73,17 +73,44 @@ Math.random -->Num b/w (0,1)
 // let total = tipCal(100, 10);
 // console.log(`The total bill is : ${total} $`);
 
+/* 
+  TODO: Write a function that sums two numbers
+  TODO: Write a function that subtracts two numbers
+  TODO: Write a function that divides two numbers.
+  TODO: Write a function that multiplies two numbers.
+  *NOTE* be sure to handle dividing by zero 😉
+  ES5 Syntax: function Add(){}
+  ES6 Syntax (Arrow function): const add = () => {}
+*/
 
-// arrow function
-// arrow function with explicit return
-const sunArrow1 = (a, b) => {
-  return a+b
-}
+// let sum = (num1, num2) => num1+num2;
 
-// arrow function with inplicit return
-//NOTE :for implicit fn remove {} and the `return`
-const sumArrow2 = (a, b) => a+b
+// let sub = (num1, num2) => num1-num2;
+
+// function div(num1, num2) {
+//     if (num2 == 0) {
+//       console.log("invalid!");
+//       return;
+//     } else {
+//       return (a / b);
+//     }
+// };
 
 
+// let mul = (num1, num2) => num1 * num2;
+
+// console.log('hello from the SUM exercise')
+/* 
+  TODO: create a function that console logs the result of any of the above operations.
+*/
 
 
+// Arrays :-
+const groceries = ['a', 'b', 'c', 'd'];
+console.log(groceries);
+
+// console.log(groceries[3]);
+
+groceries.push('mithin');
+
+console.log(groceries);
