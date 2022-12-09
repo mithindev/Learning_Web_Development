@@ -106,11 +106,255 @@ Math.random -->Num b/w (0,1)
 
 
 // Arrays :-
-const groceries = ['a', 'b', 'c', 'd'];
-console.log(groceries);
+// const letters = ['a', 'b', 'c', 'd'];
+// console.log(groceries);
 
 // console.log(groceries[3]);
 
-groceries.push('mithin');
+// groceries.push('mithin');
 
-console.log(groceries);
+// console.log(groceries);
+
+// Array slice
+
+// Array methods
+
+// (slice, push, indexof, length)
+
+// console.log(letters);
+
+// OBJECTS
+
+// const person = {
+//   name: 'Mithin',
+//   shirt: 'grey'
+// };
+
+// // To access a object we use dot or brace notation;
+// console.log(person.name);
+// console.log(person['shirt']);
+
+// // assign object
+
+// person.phone = '1213244244';
+// console.log(person.phone);
+
+// console.log(person);
+
+// const person2 = {
+//   name: 'mithin',
+//   age: 18,
+//   shirt: 'black'
+// }
+
+// console.log(person2)
+
+// const induc = (name, shirt) => {
+//   const person2 = {
+//     name: name,
+//     age: 18,
+//     shirt: shirt,
+//     assets: 100000,
+//     liability: 50000
+//   }
+//   const intro = `Hi my name is ${person2.name} and my shirt is ${person2.shirt}, and my networth is : ${person2.assets - person2.liability}`;
+
+//   return intro;
+// };
+
+// console.log(induc('mtihin', 'white'));
+
+// const mytry = (name, age) => {
+//   const person = {
+//     name: name,
+//     age: 18,
+//     shier: 'white'
+//   }
+//   const inter_demo = `Hello World! I am ${person.name} and my age is ${person.age}`
+  
+//   return inter_demo;
+// }
+
+// console.log(mytry('mithin', 18))
+
+// Megthods
+
+// const introducer = (name, shirt) => {
+//   const person = {
+//     name: name,
+//     age: 18,
+//     shirt: shirt,
+//     assets: 100000,
+//     liability: 50000,
+//     netWorth: function () {
+//       return this.assets - this.liability
+//     }
+//   }
+// }
+
+// const person = {
+//   name: 'mithin',
+//   age: 18,
+//   shirt: 'white',
+//   assets: 100000,
+//   liability: 50000,
+//   netWorth: function () {
+//     return this.assets - this.liability
+//   }
+// }
+
+// console.log(person.netWorth())
+
+// LOOPS
+
+// const letters = ['a', 'b', 'c', 'd'];
+
+// for (let i = 0; i < letters.length; i++) {
+//   console.log(letters[i]);
+// }
+
+// for (const i of letters) {
+//   console.log(i)
+// }
+
+const numbers = [1, 2, 3, 45, 6, 7, 8]
+
+// sum up all the numbers in a array
+
+// for (const i of numbers) {
+//   console.log(i)
+// }
+
+// let result = [];
+// for (const i of numbers) {
+//   result.push(2 * i);
+
+// }
+
+// console.log(result)
+
+// const double = (num) => {
+// let result = [];
+// for (const i of num) {
+//   result.push(i ** 2);
+//   }
+//   return result;
+// }
+
+// console.log(double([1, 2, 3, 4, 5, 6]))
+
+
+// const letterCounter = (arr, target) => {
+//   // const phrase = 'Hello World!';
+//   let count = 0;
+
+// // for in loops
+
+//   for (i in arr) {
+//     if (arr[i] == target) {
+//       count = count + 1;
+//     }
+//   }
+//   return count;
+
+// }
+
+// let ans = letterCounter([1, 2, 6, 4, 5, 6], 6);
+// console.log(ans);
+
+//for of loops
+
+// for (const i of arr) {
+//     if (arr[i] == target) {
+//       count = count + 1;
+//     }
+//   }
+
+// let phrase = 'Hello! World';
+
+// const Length = (arr) => {
+
+//   let result = 0;
+
+// for (const index in phrase) {
+//   result = Number(index) + 1 // Here the index is in strings so we are type casting it;
+//   }
+  
+//   return { result };
+
+// }
+
+// const phrase = prompt('Write your own phrase');
+
+// console.log(Length(phrase));
+
+
+// const SumArr = (arr) => {
+//   let sum = 0;
+//   for (i in arr) {
+//     sum += Number(arr[i]);
+//   }
+
+//   return { sum };
+// }
+
+// let ans = SumArr([1, 2, 3, 4, 5]);
+// console.log(ans);
+
+
+// const SumArr = (arr) => {
+//   let sum = 0;
+//   for (i in arr) {
+//     sum += (arr[i]);
+//   }
+
+//   return { sum };
+// }
+
+// let ans = SumArr([1, 2, 3, 4, 5]);
+// console.log(ans);
+
+// const SumArr1 = (arr) => {
+//   let sum1 = 0;
+//   for (const i of arr) {
+//     sum1 += (i);
+//   }
+
+//   return { sum1 };
+// }
+
+// let ans1 = SumArr1([1, 2, 3, 4, 5]);
+// console.log(ans1);
+
+// const Max = (arr) => {
+//   let temp = -100000000;
+//   for (const element of arr) {
+//     if (element > temp) {
+//       temp = element;
+//     }
+//   }
+//   return temp;
+// }
+let frequency = {};
+
+let LetterFreq = (phrase) => {
+  for (element of phrase) {
+    frequency[letter] = Count(phrase, element);
+  }
+  return frequency;
+
+}
+
+let Count = (arr, target) => {
+  let count = 0;
+  for (const element of arr) {
+    if (element == target) {
+      count += 1;
+    }
+  }
+  return count;
+}
+
+console.log(LetterFreq('aaaabbbbedfienfeifn dfndejf'));
+
+// console.log(Count('mithin dev', 'e'));
