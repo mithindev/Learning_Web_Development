@@ -217,7 +217,7 @@ Math.random -->Num b/w (0,1)
 //   console.log(i)
 // }
 
-const numbers = [1, 2, 3, 45, 6, 7, 8]
+// const numbers = [1, 2, 3, 45, 6, 7, 8]
 
 // sum up all the numbers in a array
 
@@ -335,26 +335,58 @@ const numbers = [1, 2, 3, 45, 6, 7, 8]
 //   }
 //   return temp;
 // }
-let frequency = {};
+// let frequency = {};
 
-let LetterFreq = (phrase) => {
-  for (element of phrase) {
-    frequency[letter] = Count(phrase, element);
-  }
-  return frequency;
+// let LetterFreq = (phrase) => {
+//   for (element of phrase) {
+//     frequency[letter] = Count(phrase, element);
+//   }
+//   return frequency;
 
-}
+// }
 
-let Count = (arr, target) => {
-  let count = 0;
-  for (const element of arr) {
-    if (element == target) {
-      count += 1;
-    }
-  }
-  return count;
-}
+// let Count = (arr, target) => {
+//   let count = 0;
+//   for (const element of arr) {
+//     if (element == target) {
+//       count += 1;
+//     }
+//   }
+//   return count;
+// }
 
-console.log(LetterFreq('aaaabbbbedfienfeifn dfndejf'));
+// console.log(LetterFreq('aaaabbbbedfienfeifn dfndejf'));
 
 // console.log(Count('mithin dev', 'e'));
+
+// wordFrequency('')
+// const wordFrequency = (phrase) => {
+//   frequency = {};
+//   const words = phrase.split(' ');
+//   console.log(words);
+
+//   for (elements of words) {
+//     console.log(elements)
+
+//     if (elements in frequency) {
+//       frequency[elements] += 1
+//     } else {
+//       frequency[elements] = 1
+//     }
+//   }
+//   return frequency;
+// }
+
+// console.log(wordFrequency('lol What is going lol'));
+
+// HIGHER ORDER FUNCTION
+// MAPS -- loops and returns an array
+// FILTER
+// REDUCE
+
+
+
+
+[1, 2, 3, 4].map(number => console.log(number))
+
+
