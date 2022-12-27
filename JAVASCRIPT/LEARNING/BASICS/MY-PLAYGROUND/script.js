@@ -413,18 +413,18 @@ Math.random -->Num b/w (0,1)
 //     console.log(index)
 //   }
 
-const LetterFreq = (sentence) => {
-  console.log(sentence)
-  let frequency = {}
-  for (const letter of sentence) {
-    if (letter in frequency) {
-      frequency[letter] +=1
-    } else {
-      frequency[letter] = 1
-    }
-  }
-  return frequency
-}
+// const LetterFreq = (sentence) => {
+//   console.log(sentence)
+//   let frequency = {}
+//   for (const letter of sentence) {
+//     if (letter in frequency) {
+//       frequency[letter] +=1
+//     } else {
+//       frequency[letter] = 1
+//     }
+//   }
+//   return frequency
+// }
 // console.log(LetterFreq('Hi, I am mithin dev'))
 
 // code for word frequency.
@@ -432,7 +432,30 @@ const LetterFreq = (sentence) => {
 // const words = sen.split(' ')
 // console.log(words)
 
-const WordFreq = (sen) => {
-  const words = sen.split(' ')
-  return LetterFreq(words)
+// const WordFreq = (sen) => {
+//   const words = sen.split(' ')
+//   return LetterFreq(words)
+// }
+
+// Chapter 8
+// Array Methods:-
+// 1)map()
+// 2)Filter()
+// 3)reduce()
+
+// .map()
+// map - loops and returns an Array
+
+const numbers = [1, 2, 3, 4, 56, 7] 
+const arr1 = []
+const filter = (numbers, greaterThan) => {
+  let result = []
+  for (const number of numbers) {
+    if (number > greaterThan) {
+      result.push(number)
+    }
+  }
+  return result
 }
+
+console.log(filter(numbers, 3))
