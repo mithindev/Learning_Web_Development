@@ -387,6 +387,52 @@ Math.random -->Num b/w (0,1)
 
 
 
-[1, 2, 3, 4].map(number => console.log(number))
+// [1, 2, 3, 4].map(number => console.log(number))
+
+// const intro = (name, shirt) => {
+//   const person = {
+//     name: name, 
+//     shirt: shirt, 
+//     assets: 100000,
+//     liabilities: 50000,
+//     networth: function() {
+//       return this.assets - this.liabilities
+//     }
+//   }
+//   const text = `Hi, my name is ${person.name} and my shirt is ${person.shirt} and my networt is ${person.networth()}`
+//   return text
+// }
+// console.log(intro('mithin', 'black'))
 
 
+// for (const index in 'mtihin') {
+//     console.log(index)
+//   }
+
+//   for (const index of 'mtihin') {
+//     console.log(index)
+//   }
+
+const LetterFreq = (sentence) => {
+  console.log(sentence)
+  let frequency = {}
+  for (const letter of sentence) {
+    if (letter in frequency) {
+      frequency[letter] +=1
+    } else {
+      frequency[letter] = 1
+    }
+  }
+  return frequency
+}
+// console.log(LetterFreq('Hi, I am mithin dev'))
+
+// code for word frequency.
+// let sen = 'Hello world This is mithin dev'
+// const words = sen.split(' ')
+// console.log(words)
+
+const WordFreq = (sen) => {
+  const words = sen.split(' ')
+  return LetterFreq(words)
+}
